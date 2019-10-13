@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Button from './Button';
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,6 +7,7 @@ function App() {
 
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
+  const styleButtons = "counter__button";
 
   const updateCounter = (operation) => {
     switch (operation) {
@@ -32,7 +34,7 @@ function App() {
         <h2>Counter</h2>
         <p className="counter__output">{count}</p>
         <div className="counter__buttons">
-          <button className="counter__button counter__button--plus" onClick={() => updateCounter(1)}>+{step}</button>
+          <Button onClick={() => updateCounter(1)} value={step} style={styleButtons}/>
           <button className="counter__button counter__button--minus" onClick={() => updateCounter(2)}>-{step}</button>
         </div>
         <label className="counter__label">Step:</label>

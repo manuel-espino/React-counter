@@ -20,3 +20,83 @@
 .App-link {
   color: #09d3ac;
 }
+
+*{
+    box-sizing: border-box;
+margin: 0;
+padding: 0;
+  /**border: 1px solid #bbb;***/
+}
+.card{
+  border-radius: 30px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px gray;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 30px;
+}
+
+.counter{
+  margin: 0 auto;
+
+}
+.counter form{
+width: 300px;
+}
+
+.counter__output{
+  padding: 10px;
+  font-size: 4rem;
+  font-weight: bold;;
+  border-radius: 10px;
+  color: #000;
+  width: 100%;
+  margin: auto;
+}
+
+.counter__buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter__button{
+  width: 30%;
+  background-color: #888;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-width: 0 5px 5px 0;
+  outline: none;
+}
+
+.counter__button:active {
+  box-shadow: 1px 1px 10px #bbb;
+
+}
+
+
+.counter__label{
+    width: 20%;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.counter__input{
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+  outline: none;
+
+  font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.counter__output,
+.counter__buttons,
+.counter__label,
+.counter__input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
